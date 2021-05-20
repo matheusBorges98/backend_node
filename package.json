@@ -3,15 +3,22 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "matheus20021998 <56241825+matheus20021998@users.noreply.github.com>",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "knex": "^0.95.6",
     "mysql2": "^2.2.5",
     "node": "^16.1.0"
+  },
+  "repository": "https://github.com/matheusBorges98/backend_node.git",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }

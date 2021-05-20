@@ -1,3 +1,5 @@
+import usuarioService from 'services/usuario';
+
 const express = require('express');
 const router = express.Router();
 const usuarios = require('../services/usuarios.js');
@@ -36,7 +38,7 @@ router.delete('/:id', async function(req, res, next) {
   try {
     res.json(await usuarios.remove(req.params.id));
   } catch (err) {
-    console.error(`Error while deleting usuario`, err.message);
+    console.error(`Error while deleting usuarios`, err.message);
     next(err);
   }
 });
